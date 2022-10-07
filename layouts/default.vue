@@ -3,7 +3,7 @@
   <!-- <Head lang="en-US">
     <Title>⚡️🍍 Pinia + Nuxt 3</Title>
   </Head>-->
-
+<div>
   <header>
     <h1>Pinia</h1>
     <p>The intuitive store for Vue</p>
@@ -32,6 +32,7 @@
     </a> - by
     <a href="https://github.com/posva">@posva</a> 2021
   </footer>
+</div>
 </template>
 
 <script setup lang="ts">
