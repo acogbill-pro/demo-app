@@ -2,7 +2,8 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
-import '@mdi/font/css/materialdesignicons.css'
+//import { aliases, mdi } from 'vuetify/iconsets/mdi'
+//import '@mdi/font/css/materialdesignicons.css'
 
 /*const myCustomLightTheme: ThemeDefinition = {
   dark: false,
@@ -34,27 +35,26 @@ const myCustomDarkTheme: ThemeDefinition = {
     warning: '#FB8C00',
   },
 }*/
-
+/*
 const icons = {
   defaultSet: 'mdi',
   aliases,
   sets: {
     mdi,
   },
-  iconfont: 'mdi',
-}
+}*/
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     components,
-    /*theme: {
-      defaultTheme: 'myCustomLightTheme',
-      themes: {
-        myCustomLightTheme,
-        myCustomDarkTheme,
+    directives,
+    icons: {
+      defaultSet: 'mdi',
+      aliases,
+      sets: {
+        mdi,
       },
-    },*/
-    icons,
+    },
   })
 
   nuxtApp.vueApp.use(vuetify)

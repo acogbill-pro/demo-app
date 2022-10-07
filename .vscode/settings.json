@@ -1,11 +1,14 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "editor.formatOnPaste": false, // required 
+  "editor.formatOnPaste": false, // required
   "editor.formatOnType": false, // required
-  "editor.formatOnSave": true, // optional 
+  "editor.formatOnSave": true, // optional
   "editor.formatOnSaveMode": "file", // required to format on save
   "files.autoSave": "onFocusChange",
   "prettier.prettierPath": "~/.prettierrc.js",
-  "prettier.configPath": "~/.prettierrc.js" // optional but recommended
+  "prettier.configPath": "~/.prettierrc.js",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  } // optional but recommended
 }

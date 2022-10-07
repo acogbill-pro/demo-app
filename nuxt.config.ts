@@ -23,13 +23,9 @@ export default defineNuxtConfig({
 				rel: 'stylesheet',
 				href: 'https://fonts.googleapis.com/css?family=Fira+Sans:700%7CMerriweather&display=swap',
 			},
-			{
-				rel: 'stylesheet',
-				href: 'https://fonts.googleapis.com/css?family=Material+Icons',
-			},
 		],
 	},
-  css: ['~/assets/main.css'],
+	css: ['vuetify/lib/styles/main.sass','mdi/css/materialdesignicons.min.css'],
   build: {
     transpile: ['vuetify'],
   },
@@ -37,7 +33,6 @@ export default defineNuxtConfig({
     // pinia plugin
     '@pinia/nuxt',
   ],
-  modules: ['nuxt-material-design-icons-iconfont'],
   vuetify: {
 		customVariables: ['~/assets/variables.scss'],
 	}
